@@ -15,7 +15,14 @@
     font-size: 2.2rem;
     font-weight: 400;
 }
-.navbar-brand, .author{
+.navbar-brand, .author, .our-title{
     color: #ef4c00 !important;
 }
 
+.card-btn-background{
+    background-color: #ef4c00!important;
+} 
+
+.card-btn-color{
+    color: white;
+}
