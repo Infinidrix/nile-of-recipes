@@ -7,13 +7,14 @@ const TOKEN = "854efe0ebae543d5b88fd53f03852b6b";
 
 // Gets a list of random recipes, specify number or default is used 
 export async function getFeatured(amount = 6){
-    
+    // fetchs random recipes with api token - URLSearchParams is used for the part after ? to make it more readable
+    // translates to https://api.spoonacular.com/recipes/random?number=AMOUNT&limitLicense=true&apiKey=TOKEN
     let response = await fetch('https://api.spoonacular.com/recipes/random?' + new URLSearchParams({
         number: amount,
         limitLicense: true,
         apiKey: TOKEN
     }));
-
+    // convert the response body to json
     let data = await response.json();
 
     return data
@@ -22,13 +23,17 @@ export async function getFeatured(amount = 6){
 // Test the above function UNCOMMENT BELOW CODE - should return an array of 6 recipes
 // getFeatured().then(console.log)
 
+
 // Gets detailed info 
 // ID is in recipe.id
 export async function getDetailed(id){
+    // fetchs detailed information about a recipe with api token - URLSearchParams is used for the part after ? to make it more readable
+    // translates to https://api.spoonacular.com/recipes/ID/information?apiKey=TOKEN
     let response = await fetch(`https://api.spoonacular.com/recipes/${id}/information?` + new URLSearchParams({
         apiKey: TOKEN
     }));
 
+    // convert the response body to json
     let data = await response.json();
 
     return data
@@ -38,12 +43,14 @@ export async function getDetailed(id){
 
 // Pass a search query ( as a string ) and get results
 export async function searchRecipe(searchQuery){
-    //
+    // fetchs recipes that are related with the search text - URLSearchParams is used for the part after ? to make it more readable
+    // translates to https://api.spoonacular.com/recipes/complexSearch?query=searchQuery&apiKey=TOKEN
     let response = await fetch('https://api.spoonacular.com/recipes/complexSearch?' + new URLSearchParams({
         query: searchQuery,
         apiKey: TOKEN
     }));
 
+    // convert the response body to json
     let data = await response.json();
 
     return data
