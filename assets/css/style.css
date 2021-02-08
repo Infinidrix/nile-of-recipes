@@ -2,16 +2,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* default classes (as variables) starts*/
-.main-color{ /*text color for brand*/
+.main-color{ /*main text color*/
     color: rgb(255, 146, 30);
 }
-.secondary-color{ /*text color*/
+
+.main-color-bg{ /*main background color */
+    background-color: rgb(255, 146, 30);
+}
+.secondary-color{ /*secondary text color*/
     color: rgb(24, 17, 6);
 }
-.main-background-color{ /*main background color*/
+.secondary-color-bg{ /*secondary background color*/
+    background-color: rgb(24, 17, 6);
+}
+
+.tertiary-color{
+    color: white;
+}
+.tertiary-color-bg{
     background-color: white;
 }
 
@@ -29,7 +41,7 @@ form#navbar-search .form-control:focus {
 
 /* styling quote section */
 .quote-section{
-    width: 50%;
+    width: 75%;
     margin: auto;
     padding-top: 2rem;
 }
@@ -40,3 +52,4 @@ form#navbar-search .form-control:focus {
     font-size: 1rem;
     text-align: end;
 }
+/* styling quote section ends */
