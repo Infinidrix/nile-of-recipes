@@ -15,7 +15,6 @@
     font-size: 2.2rem;
     font-weight: 400;
 }
-
 .navbar-brand, .author, .card-title, .our-title{
     color: #ef4c00 !important;
 }
@@ -70,6 +69,4 @@ form#navbar-search .form-control:focus {
     border: 1px solid #ef4c00;
     background-color: #ef4c00;
 }
-
 /* search in the navbar ends */
-
