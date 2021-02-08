@@ -15,7 +15,32 @@
     font-size: 2.2rem;
     font-weight: 400;
 }
-.navbar-brand, .author{
+.navbar-brand, .author, .card-title{
     color: #ef4c00 !important;
 }
 
+.heading{
+    color: #B30733;
+    font-weight: 200;
+}
+
+.card{
+    border-radius: 20px
+}
+
+.card-img-top{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+.btn{
+    
+}
+.card-body a{
+    background-color: #ef4c00 !important;
+    color: white;
+}
