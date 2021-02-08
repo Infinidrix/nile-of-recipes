@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* default classes (as variables) starts*/
+.main-color{ /*text color for brand*/
+    color: rgb(255, 146, 30);
+}
+.secondary-color{ /*text color*/
+    color: rgb(24, 17, 6);
+}
+.main-background-color{ /*main background color*/
+    background-color: white;
+}
+
+.active{ /* active navbar links underline*/
+    border-bottom: 5px solid rgb(255,146,30);
+}
+/* default classes ends */
+
+/* search input in the navbar */
+form#navbar-search .form-control:focus {
+    border-color: rgb(255,146,30);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(255,146,30, 0.6);
+  }
+/* search input in the navbar ends */
+
+/* styling quote section */
+.quote-section{
+    width: 50%;
+    margin: auto;
+    padding-top: 2rem;
+}
+.quote-section h1{
+    font-size: 2rem;
+}
+.quote-section h4{
+    font-size: 1rem;
+    text-align: end;
+}
