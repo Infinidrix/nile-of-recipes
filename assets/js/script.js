@@ -17,12 +17,11 @@ document.addEventListener("DOMContentLoaded", async ()=>{
         document.getElementById('content-view').appendChild(instance);
     });
 
-    const recipeFragment = document.querySelector("#recipe-listing")
     recipes = await getFeatured(3);
 
     recipes.recipes.forEach(recipe => {
         // Create an instance of the template content
-        const instance = document.importNode(recipeFragment.content, true);
+        const instance = document.importNode(featuredFragment.content, true);
         // Add relevant content to the template
         instance.querySelector('.card-title').innerHTML = recipe.title;
         instance.querySelector('.card-text').innerHTML = recipe.summary;

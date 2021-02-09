@@ -25,7 +25,8 @@
 }
 
 .card{
-    border-radius: 20px
+    border-radius: 20px;
+    height: 500px;
 }
 
 .card-img-top{
@@ -37,10 +38,22 @@
     height: 200px;
 }
 
-.btn{
-    
+.card-content-text{
+    height: calc(100% - 40px);
 }
-.card-body a{
+.card-content-text p{
+    height: 75%;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.card-content-text p::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.card-body>a{
+    margin-top: 5px;
     background-color: #ef4c00 !important;
     color: white;
 }
