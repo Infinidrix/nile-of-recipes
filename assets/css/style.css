@@ -25,9 +25,11 @@
 }
 
 .card{
-    border-radius: 20px
+    border-radius: 20px;
 }
-
+.template .card{
+    height: 500px;
+}
 .card-img-top{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -37,10 +39,17 @@
     height: 200px;
 }
 
-.btn{
-    
+.template .card-content-text{
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 }
-.card-body a{
+.template .card-content-text::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.card-body>a{
+    margin-top: 5px;
     background-color: #ef4c00 !important;
     color: white;
 }
