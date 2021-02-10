@@ -2,7 +2,7 @@
  * Currently puts the api key in the git repo,
  * will change when better solution is found
  */
-const TOKEN = "854efe0ebae543d5b88fd53f03852b6b";
+const TOKEN = "15b71eeee46f4c8594f9fb7ac4ea33f4";
 
 
 // Gets a list of random recipes, specify number or default is used 
