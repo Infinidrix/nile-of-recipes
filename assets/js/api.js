@@ -21,6 +21,7 @@ export async function getFeatured(amount = 6){
     
 }
 // Test the above function UNCOMMENT BELOW CODE - should return an array of 6 recipes
+console.log("this is feature")
 // getFeatured().then(console.log)
 
 
@@ -39,7 +40,7 @@ export async function getDetailed(id){
     return data
 }
 // test the above function - UNCOMMENT BELOW CODE - shoule return details of "Slow Cooker Poblano Corn Chowder with Chicken and Chorizo"
-// getDetailed(660297).then(console.log)
+getDetailed(660297).then(console.log)
 
 // Pass a search query ( as a string ) and get results
 export async function searchRecipe(searchQuery){
