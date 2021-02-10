@@ -16,6 +16,10 @@
     color: white;
     padding: 5rem;
 }
+a{
+    color: black;
+    
+}
 
 .navbar{
     background-color: white !important;
@@ -43,9 +47,20 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-
+.round{
+    border: solid lightgray 0.1px ;
+    border-radius: 20px;
+}
+.roundImg{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 .card-img-top{
     height: 200px;
+}
+.nav-pills .nav-link.active{
+    background-color: white;
+    color: #ef4c00 ;
 }
 
 .template .card-content-text{
