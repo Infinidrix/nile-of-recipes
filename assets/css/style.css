@@ -63,6 +63,11 @@ a{
     color: #ef4c00 ;
 }
 
+.nav-pills .nav-link{
+    font-size: large;
+
+}
+
 .template .card-content-text{
     height: calc(100% - 40px);
     overflow-y: scroll;
