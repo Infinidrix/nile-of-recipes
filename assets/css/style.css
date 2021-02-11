@@ -1,3 +1,12 @@
+@font-face {
+    font-family: proximanova;
+    src: url(/assets/font/proxima_ssv/ProximaNova-Regular.otf) format("opentype");
+  }
+
+  body
+  {
+      font-family: proximanova;
+  }
 .container.greeting{
     background-image: url(https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
     border-radius: 20px;
@@ -7,6 +16,31 @@
     color: white;
     padding: 5rem;
 }
+a{
+
+    color: black;
+    
+}
+
+
+.full{
+    min-height: 100%;
+
+    
+    margin-bottom: -50px;
+}
+a:hover{
+    text-decoration: none;
+    
+}
+.footer,.pusher {
+  height: 50px;
+}
+
+
+
+
+
 
 .navbar{
     background-color: white !important;
@@ -34,11 +68,44 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-
+.aboutP{
+    font-size: 1.1em; line-height: 2em;
+}
+.round{
+    border: solid lightgray 0.1px ;
+    border-radius: 20px;
+}
+.instructionP{
+    font-size: 1em;
+    line-height: 2em;
+}
+.roundPa{
+    border: solid lightgray 0.1px ;
+    border-radius: 20px;
+    margin-right: 6%;
+    margin-left: 6%;}
+.roundImg{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 .card-img-top{
     height: 200px;
 }
+.nav-pills .nav-link.active{
+    background-color: white;
+    color: #ef4c00 ;
+}
+.h1{
+    font-size: 1.75em; 
+    font-weight: bold; 
+}
+.nav-pills .nav-link{
+    font-size: large;
 
+}
+.cardP{
+    font-size: 1.125em;
+}
 .template .card-content-text{
     height: calc(100% - 40px);
     overflow-y: scroll;
@@ -54,11 +121,15 @@
     color: white;
 }
 
-.card-btn-background{
+.card-btn-background,#btnS{
     background-color: #ef4c00!important;
 } 
+.card-btn-background{
+    font-style: normal;
+}
 
-.card-btn-color{
+.card-btn-color,#btnS{
+    font-style: normal;
     color: white;
 }
 
@@ -68,12 +139,14 @@ form#navbar-search .form-control:focus {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(255,146,30, 0.6);
   }
 
-  form#navbar-search .btn{
+  form#navbar-search .btn,#btnS{
+    font-style: normal;
       color: #ef4c00;
       border: 1px solid #ef4c00;
   }
 
   form#navbar-search .btn:hover{
+      font-style: normal;
     color: white;
     border: 1px solid #ef4c00;
     background-color: #ef4c00;

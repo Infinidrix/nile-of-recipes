@@ -2,7 +2,7 @@
  * Currently puts the api key in the git repo,
  * will change when better solution is found
  */
-const TOKEN = "854efe0ebae543d5b88fd53f03852b6b";
+const TOKEN = "15b71eeee46f4c8594f9fb7ac4ea33f4";
 
 
 // Gets a list of random recipes, specify number or default is used 
@@ -21,6 +21,7 @@ export async function getFeatured(amount = 6){
     
 }
 // Test the above function UNCOMMENT BELOW CODE - should return an array of 6 recipes
+console.log("this is feature")
 // getFeatured().then(console.log)
 
 
@@ -39,7 +40,7 @@ export async function getDetailed(id){
     return data
 }
 // test the above function - UNCOMMENT BELOW CODE - shoule return details of "Slow Cooker Poblano Corn Chowder with Chicken and Chorizo"
-// getDetailed(660297).then(console.log)
+getDetailed(660297).then(console.log)
 
 // Pass a search query ( as a string ) and get results
 export async function searchRecipe(searchQuery){
