@@ -48,7 +48,7 @@
 
             <section class="container py-4">
 
-              <div class="row round">
+              <div class="row round" id="summary-card">
                 <div class="col-md-6 mx-0 px-0">
                   <img class="img-fluid w-100 h-100 roundImg " style="min-width: 100%;" src="./assets/images/asset-5.jpg" alt="">
                 </div>
@@ -76,8 +76,8 @@
                         aria-controls="pills-about" aria-selected="true">About</a>
                     </li>
                     <li class="nav-item mx-lg-5 mx-md-3 mx-sm-0">
-                      <a class="nav-link  " id="pills-Ingerdietn-tab" data-toggle="pill" href="#pills-Ingerdietn" role="tab"
-                        aria-controls="pills-Ingerdietn" aria-selected="false">Ingrediant</a>
+                      <a class="nav-link  " id="pills-Ingredient-tab" data-toggle="pill" href="#pills-Ingredient" role="tab"
+                        aria-controls="pills-Ingredient" aria-selected="false">Ingrediant</a>
                     </li>
                     <li class="nav-item mx-lg-5 mx-md-3 mx-sm-0">
                       <a class="nav-link " id="pills-instraction-tab" data-toggle="pill" href="#pills-instraction" role="tab"
@@ -116,25 +116,27 @@
                       </p>
                     </div>
 <!--======================================================********============********============********=====================================================-->
-                    <div class="tab-pane fade" id="pills-Ingerdietn" role="tabpanel" aria-labelledby="pills-Ingerdietn-tab">
-                      <div class="row round mb-5">
-                        <div class="col-md-4 mx-0 px-0 ">
-                          <img class="img-fluid roundImg  mx-0 h-100 w-100" src="./assets/images/asset-4.png" alt="">
+                    <div class="tab-pane fade" id="pills-Ingredient" role="tabpanel" aria-labelledby="pills-Ingredient-tab">
+                      <template id="ingredient-card">
+                        <div class="row round mb-5">
+                          <div class="col-md-5 mx-0 px-0 ">
+                            <img class="img-fluid roundImg  mx-0 h-100 w-100" src="./assets/images/asset-4.png" alt="">
+                          </div>
+                          <div class="col-md-7 pt-3 pl-5 ">
+                            <h1 class="h1">
+                              Name of Ingredient
+                            </h1>
+                            <p class="cardP">
+  
+                              Aisle : Pasta and Rice <br>
+                              Made up of : about frozen cauliflower florets, thawed, cut into bite-sized pieces <br>
+                              Amount : 445.54 ml
+                            </p>
+  
+                          </div>
+                            
                         </div>
-                        <div class="col-md-8 pt-3 pl-5 ">
-                          <h1 class="h1">
-                            Name of Ingrediant
-                          </h1>
-                          <p class="cardP">
-
-                            Aisle : Pasta and Rice <br>
-                            Made up of : about frozen cauliflower florets, thawed, cut into bite-sized pieces <br>
-                            Amount : 445.54 ml
-                          </p>
-
-                        </div>
-
-                      </div>
+                      </template>
                       <div class="row round mb-5">
                         <div class="col-md-4 mx-0 px-0 ">
                           <img class="img-fluid roundImg h-100  mx-0 w-100" src="./assets/images/asset-4.png" alt="">
@@ -285,7 +287,7 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script type="module" src="./assets/js/detail.js"></script>
 </body>
 
 </html>

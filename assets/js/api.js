@@ -58,3 +58,11 @@ export async function searchRecipe(searchQuery){
 }
 // test the above function - UNCOMMENT BELOW CODE - shoule return recipies related to bananas
 // searchRecipe("Banana").then(console.log)
+
+
+/* 
+ * returns the spoonacular url for an ingredient 
+ */
+export function getImageURL(imageName){
+    return `https://spoonacular.com/cdn/ingredients_500x500/${imageName}`
+}
