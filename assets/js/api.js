@@ -64,5 +64,5 @@ export async function searchRecipe(searchQuery){
  * returns the spoonacular url for an ingredient 
  */
 export function getImageURL(imageName){
-    return `https://spoonacular.com/cdn/ingredients_500x500/${imageName}`
+    return `https://spoonacular.com/cdn/ingredients_250x250/${imageName}`
 }

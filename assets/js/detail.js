@@ -4,13 +4,14 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 
 document.addEventListener("DOMContentLoaded", async () => {
+    // get detailed information from api
     const data = await getDetailed(id);
 
+    // find the main section to iterate over
     const section = document.querySelector("section");
     
-    // Header
+    // Get the Header content
     const header = section.firstElementChild;
-    console.log(header);
     // change image
     header.querySelector("img").src = data.image;
     // change title
@@ -18,20 +19,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     // change summary
     header.querySelector("p").innerHTML = data.summary;
 
-    // About
+    // About section - navigating to it was a bit long because of how it was structured 
     const about = header.nextElementSibling
                         .nextElementSibling
                         .querySelector("#pills-about")
+    // change about page
     about.querySelector("p").innerHTML = data.summary;
 
 
-    // Ingredients
+    // Ingredients Section
     const ingredients = about.nextElementSibling;
-
+    
+    // the list of ingredients from the api 
     let ingredientList = data.extendedIngredients;
     
+    // iterate through all the ingredients from the list and create nodes
     const cardFragment = document.querySelector('#ingredient-card');
-
     ingredientList.forEach(ingredient => {
         // Create an instance of the template content
         const instance = document.importNode(cardFragment.content, true);
@@ -48,8 +51,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     const instructions = ingredients.nextElementSibling;
     instructions.querySelector('p').innerHTML = data.instructions;
 
-    // Features
+    // Features Section
     const features = instructions.nextElementSibling;
+    // puts the main features to an object to access them in the for loop
     let featureData = {
         Healthy: data.veryHealthy,
         vegan: data.vegan,
@@ -58,12 +62,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Price per Serving": data.pricePerServing,
         cheap: data.cheap,
     }
-    console.log(featureData);
+    // Iterates through each row and puts the value from featureData to the table
     features.querySelectorAll("tr").forEach((row) => {
         const children =  Array.from(row.children);
-        console.log(children);
         const featureName = children[1].textContent;
-        console.log(featureName);
         if (featureData[featureName] !== null){
             children[2].textContent = featureData[featureName];
         }

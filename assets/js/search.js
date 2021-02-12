@@ -1,5 +1,6 @@
 import { searchRecipe } from "./api.js";
 
+// Get the query from the url
 const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.get('query');
 
