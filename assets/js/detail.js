@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                         .querySelector("#pills-about")
     about.querySelector("p").innerHTML = data.summary;
 
+
+    // Ingredients
     const ingredients = about.nextElementSibling;
 
     let ingredientList = data.extendedIngredients;
@@ -41,4 +43,29 @@ document.addEventListener("DOMContentLoaded", async () => {
         ingredients.appendChild(instance);
     });
 
+    // Instruction
+
+    const instructions = ingredients.nextElementSibling;
+    instructions.querySelector('p').innerHTML = data.instructions;
+
+    // Features
+    const features = instructions.nextElementSibling;
+    let featureData = {
+        Healthy: data.veryHealthy,
+        vegan: data.vegan,
+        "Gluten Free": data.glutenFree,
+        "Health Score": data.healthScore,
+        "Price per Serving": data.pricePerServing,
+        cheap: data.cheap,
+    }
+    console.log(featureData);
+    features.querySelectorAll("tr").forEach((row) => {
+        const children =  Array.from(row.children);
+        console.log(children);
+        const featureName = children[1].textContent;
+        console.log(featureName);
+        if (featureData[featureName] !== null){
+            children[2].textContent = featureData[featureName];
+        }
+    })
 })
