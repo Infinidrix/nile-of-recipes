@@ -51,6 +51,10 @@ a:hover{
     font-size: 2.2rem;
     font-weight: 400;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 46d57cb05dd9a36daf1fe59aebc012da222c1367
 .navbar-brand, .author, .card-title, .our-title{
     color: #ef4c00 !important;
 }
@@ -61,15 +65,32 @@ a:hover{
 }
 
 .card{
+<<<<<<< HEAD
+    border-radius: 20px
+}
+
+=======
     border-radius: 20px;
 }
 .template .card{
     height: 500px;
 }
+>>>>>>> 46d57cb05dd9a36daf1fe59aebc012da222c1367
 .card-img-top{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+<<<<<<< HEAD
+
+.card-img-top{
+    height: 200px;
+}
+
+.btn{
+    
+}
+.card-body a{
+=======
 .aboutP{
     font-size: 1.1em; line-height: 2em;
 }
@@ -119,11 +140,16 @@ a:hover{
 }
 .card-body>a{
     margin-top: 5px;
+>>>>>>> 46d57cb05dd9a36daf1fe59aebc012da222c1367
     background-color: #ef4c00 !important;
     color: white;
 }
 
+<<<<<<< HEAD
+.card-btn-background{
+=======
 .card-btn-background,#btnS{
+>>>>>>> 46d57cb05dd9a36daf1fe59aebc012da222c1367
     background-color: #ef4c00!important;
 } 
 .card-btn-background{
@@ -153,4 +179,10 @@ form#navbar-search .form-control:focus {
     border: 1px solid #ef4c00;
     background-color: #ef4c00;
 }
+<<<<<<< HEAD
+
 /* search in the navbar ends */
+
+=======
+/* search in the navbar ends */
+>>>>>>> 46d57cb05dd9a36daf1fe59aebc012da222c1367
