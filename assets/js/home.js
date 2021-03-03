@@ -14,7 +14,15 @@ document.addEventListener("DOMContentLoaded", async ()=>{
         instance.querySelector('.card-img-top').src = recipe.image;
         instance.querySelector('#detail-link').href = `/detail.html?id=${recipe.id}`
         // Append the instance ot the DOM
-        document.getElementById((index < 3) ? 'content-view':'random-recipes').appendChild(instance);
+        setTimeout(_=>{
+            document.getElementById((index < 3) ? 'content-view':'random-recipes').appendChild(instance);
+        },2000);
     });
-
+    const hi= document.querySelectorAll('.hi')
+    setTimeout(_=>{
+        
+        hi.forEach((h)=>{
+            h.style.display = 'none';
+        })
+    },2000)
 })
